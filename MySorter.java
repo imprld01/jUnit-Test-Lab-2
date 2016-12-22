@@ -4,6 +4,9 @@ public class MySorter
 {
 	public void sort (double[] d)
 	{
+
+		for(double value : d) if(value < 0) return;
+
 		for (int i = 0; i < d.length - 1; i++)
 		{
 			for (int j = 0; j < d.length - i - 1; j++)
